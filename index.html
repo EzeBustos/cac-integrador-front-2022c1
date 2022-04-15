@@ -1,12 +1,135 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conf Bs As</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
-    <h1>Conf Bs As</h1>
+    <header class="site-header ">
+        <div class="contenido-header">
+            <div class="barra-sup">
+                <div class="barra-sup__contenido contenedor">
+                    <div class="logo">
+                        <img src="img/codoacodo.png" alt="logo codo a codo">
+                        <h2>Conf Bs As</h2>
+                    </div>
+                    <div class="barra-sup__nav">
+                        <a href="#">La conferencia</a>
+                        <a href="#">Los oradores</a>
+                        <a href="#">El lugar y la fecha</a>
+                        <a href="#">Conviértete en orador</a>
+                        <a href="#">Comprar tickets</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenido-header__txt contenedor">
+                <h1>Conf Bs As</h1>
+                <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes deCodo
+                    a Codo y a los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+                <a class="btn btn__trans" href="#">
+                        Quiero ser orador
+                    </a>
+                <a class="btn btn__verde" href="#">
+                        Comprar tickets
+                    </a>
+            </div>
+        </div>
+    </header>
+    <main class="contenedor">
+        <h2 class="Sub-titulos"><span>conoce a los</span> Oradores</h2>
+        <div class="articulos">
+            <a href="#">
+                <article class="articulos__oradores">
+                    <img src="img/steve.jpg" alt="Steve Jobs">
+                    <div class="articulos__oradores__txt">
+                        <div class="articulos__oradores__temas">
+                            <p class="amarillo">JavaScript</p>
+                            <p class="aqua">React</p>
+                        </div>
+                        <h3>Steve Jobs</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In esse eaque quisquam possimus dolor odio, beatae eligendi distinctio labore, voluptates ex autem ut, rerum magnam corrupti excepturi similique voluptas aliquid?</p>
+                    </div>
+                </article>
+            </a>
+            <a href="#">
+                <article class="articulos__oradores">
+                    <img src="img/bill.jpg" alt="Bill Gates">
+                    <div class="articulos__oradores__txt">
+                        <div class="articulos__oradores__temas">
+                            <p class="amarillo">JavaScript</p>
+                            <p class="aqua">React</p>
+                        </div>
+                        <h3>Bill Gates</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In esse eaque quisquam possimus dolor odio, beatae eligendi distinctio labore, voluptates ex autem ut, rerum magnam corrupti excepturi similique voluptas aliquid?</p>
+                    </div>
+                </article>
+            </a>
+
+            <a href="#">
+                <article class="articulos__oradores">
+                    <img src="img/ada.jpeg" alt="Ada Lovelace">
+                    <div class="articulos__oradores__txt">
+                        <div class="articulos__oradores__temas">
+                            <p class="gris">Negocios</p>
+                            <p class="red">Startups</p>
+                        </div>
+                        <h3>Steve Jobs</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In esse eaque quisquam possimus dolor odio, beatae eligendi distinctio labore, voluptates ex autem ut, rerum magnam corrupti excepturi similique voluptas aliquid?</p>
+                    </div>
+                </article>
+            </a>
+        </div>
+    </main>
+    <section class="seccion-octubre">
+        <img src="img/honolulu.jpg" alt="Foto Honolulu">
+        <div class="octubre">
+            <h3>Bs As - Octubre</h3>
+            <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre Honolulu se refiere al área urbana en la costa
+                sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudadcondado consolidada que cobre toda la ciudad (aproximadamente 600 Km<sup>2</sup> de superficie).</p>
+            <a class="btn btn__trans" href="#">Conocé más</a>
+        </div>
+    </section>
+    <section class="contenedor-formulario">
+        <h2 class="Sub-titulos"><span>conviértete en un</span> Orador</h2>
+        <p class="contenedor-formulario__txt">Anótate como orador para dar una <span>charla ignite</span>. Cuéntanos de qué quieres hablar!</p>
+        <form class="formulario">
+            <div class="formulario__campo">
+                <input class="formulario__campo__info" type="text" id="nombre" placeholder="Nombre">
+            </div>
+            <div class="formulario__campo">
+                <input class="formulario__campo__info" type="text" id="apellido" placeholder="Apellido">
+            </div>
+            <div class="formulario__campo__msj">
+                <textarea class="formulario__campo__info--msj" name="textarea" id="msj">Sobre qué quieres hablar?</textarea>
+                <p>Recuerda incluir un título para tu charla</p>
+            </div>
+
+            <div class="formulario__campo__btn">
+                <input class="btn__verde-claro" type="submit" value="Enviar">
+            </div>
+        </form>
+    </section>
+    <footer class="contenido-footer">
+        <div class="contenedor contenido-footer__links">
+            <a href="#">Prefuntas<br>frecuentes</a>
+            <a href="#">Contáctanos</a>
+            <a href="#">Prensa</a>
+            <a href="#">Conferencias</a>
+            <a href="#">Términos y<br>condiciones</a>
+            <a href="#">Privacidad</a>
+            <a href="#">Estudiantes</a>
+        </div>
+    </footer>
 </body>
+
 </html>
