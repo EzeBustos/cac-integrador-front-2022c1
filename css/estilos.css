@@ -312,11 +312,11 @@ a .articulos__oradores {
     width: 100%;
     border-radius: .2em;
     border: 1px solid rgb(238, 232, 232);
-    padding-left: .5em;
+    padding: .3em 0 .3em .5em;
 }
 
 ::placeholder {
-    color: #353a40;
+    color: #999d9e;
     font-size: .9em;
 }
 
