@@ -374,3 +374,42 @@ a .articulos__oradores {
 .contenido-footer__links a {
     font-weight: 500;
 }
+
+
+/* BOTON DESPLEGABLE */
+
+.btn-flotante {
+    max-width: 30em;
+    position: fixed;
+    right: 1em;
+    bottom: 6em;
+    text-align: center;
+}
+
+.btn-flotante__colapsado {
+    border-radius: 50%;
+    background-color: #29a744;
+    font-size: 1em;
+    font-weight: 700;
+    padding: .5em 1em;
+    text-align: center;
+    transition: 2s;
+}
+
+.btn-flotante:hover .btn-flotante__colapsado {
+    display: none;
+}
+
+.btn-flotante__desplegado {
+    display: none;
+}
+
+.btn-flotante:hover .btn-flotante__desplegado {
+    background-color: #1d5271;
+    border-radius: 3em;
+    display: block;
+    font-size: 1em;
+    padding: 1em;
+    text-align: center;
+    max-width: 100em;
+}
