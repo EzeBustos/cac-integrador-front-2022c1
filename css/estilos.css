@@ -78,7 +78,6 @@ a {
     background-size: cover;
     height: 40em;
     position: relative;
-    background-color: rgba(0, 0, 0, .5);
 }
 
 
@@ -142,6 +141,26 @@ a {
 
 .contenido-header__txt .btn__trans {
     margin-right: 2rem;
+}
+
+.bg-img {
+    background-image: url(../img/ba1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 35em;
+    position: relative;
+}
+
+.pt-per {
+    padding-top: 14em;
+}
+
+.black-out {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
 }
 
 
