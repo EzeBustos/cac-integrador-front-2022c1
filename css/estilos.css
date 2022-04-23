@@ -161,6 +161,7 @@ a {
     background-color: rgba(0, 0, 0, .5);
     width: 100%;
     height: 100%;
+    left: 0;
 }
 
 
@@ -257,7 +258,7 @@ a .articulos__oradores {
 }
 
 .fs-7 {
-    font-size: .6rem;
+    font-size: .8rem;
 }
 
 
@@ -385,6 +386,11 @@ a .articulos__oradores {
 .contenido-footer {
     background: linear-gradient(to right, #1d3744, #1d5271);
     padding: 2em;
+}
+
+.contenido-footer-boos {
+    background: linear-gradient(to right, #1d3744, #1d5271);
+    padding: 1em;
 }
 
 .contenido-footer__links {
