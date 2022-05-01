@@ -87,12 +87,6 @@ a {
     background-color: #353a40;
 }
 
-.barra-sup__contenido {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .logo {
     display: flex;
     align-items: center;
@@ -101,6 +95,10 @@ a {
 .logo img {
     max-width: 8rem;
     max-height: 3.5rem;
+}
+
+.barra-sup__nav {
+    padding-bottom: 1rem;
 }
 
 .barra-sup__nav a {
@@ -119,6 +117,17 @@ a {
     color: #29a744;
 }
 
+@media (min-width: 996px) {
+    .barra-sup__contenido {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .barra-sup__nav {
+        padding-bottom: 0;
+    }
+}
+
 
 /*Cuerpo header*/
 
@@ -130,19 +139,6 @@ a {
     color: #fff;
 }
 
-.contenido-header__txt {
-    text-align: right;
-    margin-top: 14rem;
-}
-
-.contenido-header__txt p {
-    margin: 0 0 3rem 50%;
-}
-
-.contenido-header__txt .btn__trans {
-    margin-right: 2rem;
-}
-
 .bg-img {
     background-image: url(../img/ba1.jpg);
     background-repeat: no-repeat;
@@ -150,6 +146,14 @@ a {
     background-size: cover;
     height: 35em;
     position: relative;
+}
+
+.contenido-header__txt {
+    margin-top: 10rem;
+}
+
+.contenido-header__txt a {
+    margin-right: 2rem;
 }
 
 .pt-per {
@@ -162,6 +166,19 @@ a {
     width: 100%;
     height: 100%;
     left: 0;
+}
+
+@media (min-width: 996px) {
+    .contenido-header__txt {
+        text-align: right;
+        margin-top: 14rem;
+    }
+    .contenido-header__txt p {
+        margin: 0 0 3rem 50%;
+    }
+    .contenido-header__txt .btn__trans {
+        margin-right: 2rem;
+    }
 }
 
 
@@ -183,19 +200,30 @@ a {
     margin-bottom: .5em;
 }
 
-.articulos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 2rem;
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 2em;
+@media (min-width: 768px) {
+    .articulos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 1em;
+    }
+}
+
+@media (min-width: 996px) {
+    .articulos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+    }
 }
 
 .articulos__oradores {
     border: 1px solid rgba(226, 221, 221, .5);
     border-radius: .2em;
     text-align: left;
+    margin-bottom: 1rem;
 }
 
 .articulos__oradores img {
@@ -264,22 +292,26 @@ a .articulos__oradores {
 
 /*SECCION*/
 
-.seccion-octubre {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 2em;
-}
-
-.seccion-octubre>img {
-    max-width: 50%;
-    flex: 0 0 calc(50% - .1em);
+@media (min-width: 768px) {
+    .seccion-octubre {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 2em;
+    }
+    .seccion-octubre>img {
+        max-width: 50%;
+        flex: 0 0 calc(50% - .1em);
+    }
+    .seccion-octubre .octubre {
+        padding: 0 1em;
+    }
 }
 
 .seccion-octubre .octubre {
     background-color: #353a40;
     color: #fff;
-    padding: 0 1em;
+    padding: .5em 1em 1.5em;
     flex: 0 0 calc(50% - .1em);
 }
 
@@ -393,11 +425,22 @@ a .articulos__oradores {
     padding: 1em;
 }
 
-.contenido-footer__links {
-    display: flex;
-    justify-content: space-evenly;
+.contenido-footer__links a {
+    display: block;
+    margin-bottom: 1.3rem;
     text-align: center;
-    align-items: center;
+}
+
+@media (min-width: 786px) {
+    .contenido-footer__links {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        align-items: center;
+    }
+    .contenido-footer__links a {
+        margin-bottom: 0;
+    }
 }
 
 .contenido-footer__links a {
