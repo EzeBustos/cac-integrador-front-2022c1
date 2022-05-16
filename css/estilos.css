@@ -11,6 +11,9 @@ html {
 body {
     font-family: 'Hind', sans-serif;
     font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 img {
@@ -66,6 +69,15 @@ a {
 .btn__trans {
     border: 1px solid #fff;
     background-color: transparent;
+}
+
+.gris {
+    color: #999d9e;
+}
+
+.font-siz {
+    font-size: 1.6rem;
+    font-weight: 200;
 }
 
 
@@ -209,6 +221,13 @@ a {
         margin: 0 auto;
         margin-bottom: 1em;
     }
+    .articulos__tikt {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 1em;
+    }
 }
 
 @media (min-width: 996px) {
@@ -216,6 +235,12 @@ a {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         column-gap: 2rem;
+    }
+    .articulos__tikt {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: 1em;
     }
 }
 
@@ -285,6 +310,31 @@ a .articulos__oradores {
     margin-top: 1em;
 }
 
+.descuento {
+    margin: 2rem .2rem 0;
+}
+
+.articulos__tikt__txt {
+    border-radius: .2em;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin: 0 auto;
+    color: #000;
+    padding: 0 2rem;
+}
+
+.brd-blue {
+    border: 3px solid rgb(143, 192, 245);
+}
+
+.brd-aqua {
+    border: 3px solid rgb(150, 214, 223);
+}
+
+.brd-yellow {
+    border: 3px solid rgb(255, 230, 155);
+}
+
 .fs-7 {
     font-size: .8rem;
 }
@@ -297,7 +347,6 @@ a .articulos__oradores {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        margin-bottom: 2em;
     }
     .seccion-octubre>img {
         max-width: 50%;
@@ -339,12 +388,12 @@ a .articulos__oradores {
 .contenedor-formulario {
     width: 50%;
     margin: 0 auto;
-    text-align: center;
 }
 
 .contenedor-formulario__txt {
     font-size: .8em;
     font-weight: 400;
+    text-align: center;
 }
 
 .contenedor-formulario__txt span {
@@ -364,6 +413,11 @@ a .articulos__oradores {
     margin-bottom: 1em;
 }
 
+.formulario__campo__txt {
+    font-size: 1.4rem;
+    font-weight: 200;
+}
+
 .formulario__campo__info {
     width: 100%;
     border-radius: .2em;
@@ -378,6 +432,7 @@ a .articulos__oradores {
 
 .formulario__campo__msj {
     width: 100%;
+    margin-bottom: 1rem;
 }
 
 .formulario__campo__msj>p {
@@ -395,6 +450,24 @@ a .articulos__oradores {
     font-weight: 300;
     border-radius: .2em;
     border: 1px solid rgb(238, 232, 232);
+}
+
+select {
+    background-color: #fff;
+}
+
+.suma-entradas {
+    width: 100%;
+    background-color: rgb(204, 229, 255);
+    border-radius: .2em;
+    margin-bottom: 1rem;
+    border: 1px solid rgb(176, 214, 255);
+}
+
+.pagar {
+    margin: 1rem;
+    color: rgb(69, 103, 141);
+    font-size: 1.3rem;
 }
 
 .formulario__campo__btn {
@@ -418,6 +491,7 @@ a .articulos__oradores {
 .contenido-footer {
     background: linear-gradient(to right, #1d3744, #1d5271);
     padding: 2em;
+    margin-top: auto;
 }
 
 .contenido-footer-boos {

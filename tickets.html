@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conf Bs As</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <div class="barra-sup">
+                <div class="barra-sup__contenido contenedor">
+                    <div class="logo">
+                        <img src="img/codoacodo.png" alt="logo codo a codo">
+                        <a href="index.html">
+                            <h2>Conf Bs As</h2>
+                        </a>
+                    </div>
+                    <nav class="barra-sup__nav">
+                        <a href="#">La conferencia</a>
+                        <a href="#">Los oradores</a>
+                        <a href="#">El lugar y la fecha</a>
+                        <a href="#">Conviértete en orador</a>
+                        <a href="#">Comprar tickets</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="btn-flotante">
+        <div>
+            <a class="btn-flotante__colapsado">B</a>
+            <a class="btn-flotante__desplegado" href="boostrap.html"> Ver version con boostrap</a>
+        </div>
+    </div>
+    <main class="contenedor articulos__tikt">
+        <div class="descuento">
+            <article class="articulos__tikt__txt brd-blue">
+                <h3>Estudiante</h3>
+                <p class="font-siz">Tienen un descuento</p>
+                <h3>80%</h3>
+                <p class="gris">* presentar documentación</p>
+            </article>
+        </div>
+        <div class="descuento">
+            <article class="articulos__tikt__txt brd-aqua">
+                <h3>Trainee</h3>
+                <p class="font-siz">Tienen un descuento</p>
+                <h3>50%</h3>
+                <p class="gris">* presentar documentación</p>
+            </article>
+        </div>
+
+        <div class="descuento">
+            <article class="articulos__tikt__txt brd-yellow">
+                <h3>Junior</h3>
+                <p class="font-siz">Tienen un descuento</p>
+                <h3>15%</h3>
+                <p class="gris">* presentar documentación</p>
+            </article>
+        </div>
+    </main>
+    <section class="contenedor-formulario">
+        <h2 class="Sub-titulos"><span>venta</span>Valor de ticket $200</h2>
+        <form class="formulario">
+            <div class="formulario__campo">
+                <input class="formulario__campo__info" type="text" id="nombre" placeholder="Nombre">
+            </div>
+            <div class="formulario__campo">
+                <input class="formulario__campo__info" type="text" id="apellido" placeholder="Apellido">
+            </div>
+            <div class="formulario__campo__msj">
+                <input class="formulario__campo__info" type="email" id="email" name="email" placeholder="Correo">
+            </div>
+            <div class="formulario__campo">
+                <label class="formulario__campo__txt" for="contidad">Cantidad</label>
+                <input class="formulario__campo__info" type="number" name="quantity" min="0" id="cantidad" placeholder="Cantidad">
+            </div>
+            <div class="formulario__campo">
+                <label class="formulario__campo__txt" for="categoria">Categoria</label>
+                <select class="formulario__campo__info" name="descuento" id="categoria">
+                    <option value="e">Estudiante</option>
+                    <option value="t">Trainee</option>
+                    <option value="j">Junior</option>
+                </select>
+            </div>
+
+            <div class="suma-entradas">
+                <p class="pagar">Total a Pagar: $</p>
+            </div>
+
+            <div class="formulario__campo">
+                <input class="btn__verde-claro" id="reset" type="reset" value="Borrar">
+            </div>
+            <div class="formulario__campo">
+                <button class="btn__verde-claro" id="resumen" type="button">Resumen</button>
+            </div>
+        </form>
+    </section>
+    <footer class="contenido-footer">
+        <nav class="contenedor contenido-footer__links">
+            <a href="#">Prefuntas<br>frecuentes</a>
+            <a href="#">Contáctanos</a>
+            <a href="#">Prensa</a>
+            <a href="#">Conferencias</a>
+            <a href="#">Términos y<br>condiciones</a>
+            <a href="#">Privacidad</a>
+            <a href="#">Estudiantes</a>
+        </nav>
+    </footer>
+
+    <script src="js/datos.js"></script>
+</body>
+
+</html>
