@@ -19,7 +19,9 @@ function handClickInImputBtn() {
     btnResumen.innerHTML = "Comprar";
     let cant = document.getElementById("cantidad").value;
     let desc = document.getElementById("categoria").value;
+
     cant = cant * 200;
+
     if (desc == "e") {
         totPag = cant * .2;
     } else if (desc == "t") {
@@ -27,6 +29,7 @@ function handClickInImputBtn() {
     } else {
         totPag = cant * .85;
     }
+
     /*switch (desc) {
         case "e":
             desc = .2;
@@ -38,8 +41,8 @@ function handClickInImputBtn() {
             desc = .85;
             break
     }
-
     totPag = cant * desc;*/
+
     totPagRes.innerHTML = totPagOrg + totPag;
 }
 
